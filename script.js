@@ -15,5 +15,9 @@ function clipboard(){
 // <!-- 리뷰 제출 -->
 reviewSubmit.addEventListener("submit",submitReview);
 function submitReview(){
+  dataLayer.push({
+    'event' : 'submitForm',
+    'formName' : '포토리뷰'
+  });
   alert('리뷰 작성이 완료되었습니다. 이벤트 응모 완료!');
 }
